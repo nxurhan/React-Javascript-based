@@ -11,7 +11,7 @@ export default class App extends Component {
             <div className="flexible-content">
                 <ToastContainer
                     position="bottom-center"
-                    autoClose={10000}
+                    autoClose={5000}
                     hideProgressBar={false}
                     newestOnTop={false}
                     closeOnClick={false}
