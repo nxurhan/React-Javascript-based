@@ -20,8 +20,8 @@ export default class App extends Component {
                     draggable
                     pauseOnHover
                 />
-            <Routes />
-        </div>
+                <Routes />
+            </div>
         );
     }
 }

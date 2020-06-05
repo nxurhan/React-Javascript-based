@@ -1,5 +1,4 @@
 html {
-    /*Top bar bas be edit as added title casuing problems*/
     overflow: hidden;
 }
 
@@ -155,18 +154,7 @@ button.btn-default.btn.Ripple-parent.loginBtn, button.loginBtn.btn.btn-secondary
 .card.CardHover:hover {
     border: 1px solid var(--secondary);
 }
-/*@media (max-width: 480px) {
-    .flexCenter {
-        top: 50%; 
-        left: 50%; 
-        display: block;
-        position: absolute;
-        width: 750px;
-        height: 417px;
-        margin-top: -208.5px; 
-        margin-left: -375px; 
-    }
-}*/
+
 .centerContent {
     align-items: center;
     justify-content: center;

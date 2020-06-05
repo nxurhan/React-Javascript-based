@@ -11,7 +11,7 @@ const Leftsidebar = () => {
                         Dashboard
                     </MDBListGroupItem>
                 </NavLink>
-                
+
                 <NavLink to="/tablePage" activeClassName="activeClass">
                     <MDBListGroupItem className="menuItem">
                         Table Info

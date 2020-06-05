@@ -90,7 +90,7 @@ class Signin extends Component {
                                                 className='loginInputs'
                                                 onChange={this.handleChange}
                                                 value={this.state.password}
-                                                autocomplete={'on'}
+                                                autoComplete={'on'}
                                                 tabIndex={2}
                                             />
                                         </FormGroup>

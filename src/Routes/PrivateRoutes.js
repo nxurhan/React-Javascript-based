@@ -11,7 +11,6 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
                 <div>
                     <Navbar />
                     <div className="wrapper">
-
                         <Leftsidebar />
                         <div className="main">
                             <Component {...props} />

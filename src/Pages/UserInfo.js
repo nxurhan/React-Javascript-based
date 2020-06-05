@@ -2,7 +2,7 @@
 import userInfo from '../data/userInfo.json';
 import TopBar from '../components/TopBar';
 import { toast } from 'react-toastify';
-import { MDBCard, MDBCardBody, MDBCol, MDBBtn, MDBInput } from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBCol, MDBBtn, MDBInput, MDBRow } from 'mdbreact';
 
 class UserInfo extends Component {
     constructor(props) {
@@ -49,106 +49,106 @@ class UserInfo extends Component {
             <div>
                 <TopBar title="User Info" />
                 <div className="container">
-                <MDBCol>
-                    <MDBCard className="CardHover">
-                        <MDBCardBody>
-                            <form onSubmit={this.handleSubmit}>
-                                <div className="form-row">
-                                    <div className="form-group col-md-4">
-                                        <label >First Name</label>
-                                        <MDBInput
-                                            className="form-control"
-                                            value={this.state.firstName}
-                                            name="firstName"
-                                            onChange={this.handleInputs} />
-                                    </div>
-                                    <div className="form-group col-md-4">
-                                        <label >Last Name</label>
-                                        <MDBInput type="text"
-                                            className="form-control"
-                                            value={this.state.lastName}
-                                            name="lastName"
-                                            onChange={this.handleInputs}
-                                        />
-                                    </div>
-                                    <div className="form-group col-md-4">
-                                        <label >Role</label>
-                                        <MDBInput type="text"
-                                            className="form-control"
-                                            value={this.state.role}
-                                            name="role"
-                                            onChange={this.handleInputs}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="form-row">
-                                    <div className="form-group col-md-4">
-                                        <label >Email</label>
-                                        <MDBInput type="email"
-                                            className="form-control"
-                                            value={this.state.email}
-                                            onChange={this.handleInputs}
-                                            name="email" />
-                                    </div>
-                                    <div className="form-group col-md-4">
-                                        <label>Password</label>
-                                        <MDBInput type="password"
-                                            className="form-control"
-                                            value={this.state.password}
-                                            onChange={this.handleInputs}
-                                            name="password" />
-                                    </div>
-                                    <div className="form-group col-md-4">
-                                        <label >Nationality</label>
-                                        <select className="browser-default custom-select"
-                                            value={this.state.nationality}
-                                            onChange={this.handleInputs}
-                                            name="nationality" >
-                                            <option defaultValue>Select Your Nationality</option>
-                                            <option value="1">Lebanese</option>
-                                            <option value="2">Not Lebanese</option>
-                                            <option value="3">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div className="form-row">
-                                    <div className="form-group col-md-4">
-                                        <label>Age</label>
-                                        <MDBInput type="number"
-                                            className="form-control"
-                                            value={this.state.age}
-                                            onChange={this.handleInputs}
-                                            name="age" />
-                                    </div>
-                                    <div className="form-group col-md-4">
-                                        <label>Phone Number</label>
-                                        <MDBInput type="number"
-                                            className="form-control"
-                                            value={this.state.phoneNum}
-                                            onChange={this.handleInputs}
-                                            name="phoneNum" />
-                                    </div>
-                                    <div className="form-group col-md-4">
-                                        <label >Address</label>
-                                        <MDBInput type="textarea"
-                                            className="form-control rounded-0"
-                                            rows="2"
-                                            value={this.state.address}
-                                            onChange={this.handleInputs}
-                                            name="address" />
-                                    </div>
-                                </div>
-                                <div className="form-group col-md-2">
-                                    <div className='text-center '>
-                                        <MDBBtn md={4} className='loginBtn' onClick={this.handleSubmit} >
-                                            Save
+                    <MDBCol md="12">
+                        <MDBCard className="CardHover">
+                            <MDBCardBody>
+                                <form onSubmit={this.handleSubmit}>
+                                    <MDBRow>
+                                        <MDBCol md="4">
+                                            <label >First Name</label>
+                                            <MDBInput
+                                                className="form-control"
+                                                value={this.state.firstName}
+                                                name="firstName"
+                                                onChange={this.handleInputs} />
+                                        </MDBCol>
+                                        <MDBCol md="4">
+                                            <label >Last Name</label>
+                                            <MDBInput type="text"
+                                                className="form-control"
+                                                value={this.state.lastName}
+                                                name="lastName"
+                                                onChange={this.handleInputs}
+                                            />
+                                        </MDBCol>
+                                        <MDBCol md="4">
+                                            <label >Role</label>
+                                            <MDBInput type="text"
+                                                className="form-control"
+                                                value={this.state.role}
+                                                name="role"
+                                                onChange={this.handleInputs}
+                                            />
+                                        </MDBCol>
+                                    </MDBRow>
+                                    <MDBRow>
+                                        <MDBCol md="4">
+                                            <label >Email</label>
+                                            <MDBInput type="email"
+                                                className="form-control"
+                                                value={this.state.email}
+                                                onChange={this.handleInputs}
+                                                name="email" />
+                                        </MDBCol>
+                                        <MDBCol md="4">
+                                            <label>Password</label>
+                                            <MDBInput type="password"
+                                                className="form-control"
+                                                value={this.state.password}
+                                                onChange={this.handleInputs}
+                                                name="password" />
+                                        </MDBCol>
+                                        <MDBCol md="4">
+                                            <label >Nationality</label>
+                                            <select className="browser-default custom-select"
+                                                value={this.state.nationality}
+                                                onChange={this.handleInputs}
+                                                name="nationality" >
+                                                <option defaultValue>Select Your Nationality</option>
+                                                <option value="1">Lebanese</option>
+                                                <option value="2">Not Lebanese</option>
+                                                <option value="3">Other</option>
+                                            </select>
+                                        </MDBCol>
+                                    </MDBRow>
+                                    <MDBRow>
+                                        <MDBCol md="4">
+                                            <label>Age</label>
+                                            <MDBInput type="number"
+                                                className="form-control"
+                                                value={this.state.age}
+                                                onChange={this.handleInputs}
+                                                name="age" />
+                                        </MDBCol>
+                                        <MDBCol md="4">
+                                            <label>Phone Number</label>
+                                            <MDBInput type="number"
+                                                className="form-control"
+                                                value={this.state.phoneNum}
+                                                onChange={this.handleInputs}
+                                                name="phoneNum" />
+                                        </MDBCol>
+                                        <MDBCol md="4">
+                                            <label >Address</label>
+                                            <MDBInput type="textarea"
+                                                className="form-control rounded-0"
+                                                rows="2"
+                                                value={this.state.address}
+                                                onChange={this.handleInputs}
+                                                name="address" />
+                                        </MDBCol>
+                                    </MDBRow>
+                                    <MDBCol md="2">
+                                        <div className='text-center '>
+                                            <MDBBtn md={4} className='loginBtn' onClick={this.handleSubmit} >
+                                                Save
                   </MDBBtn >
-                                    </div>
-                                </div>
-                            </form>
-                        </MDBCardBody>
-                    </MDBCard>
-                </MDBCol>
+                                        </div>
+                                    </MDBCol>
+                                </form>
+                            </MDBCardBody>
+                        </MDBCard>
+                    </MDBCol>
                 </div>
             </div >
         );

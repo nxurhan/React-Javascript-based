@@ -1,9 +1,9 @@
 ﻿import React, { Component } from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Line } from 'react-chartjs-2';
-import jsonData  from '../data/chartsData.json'
+import jsonData from '../data/chartsData.json'
 import TopBar from '../components/TopBar';
-import { MDBCard, MDBCardBody, MDBCol, MDBRow} from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBCol, MDBRow } from 'mdbreact';
 
 /* Bar Chart Data*/
 const dataBar = {
@@ -22,37 +22,37 @@ class Dashboard extends Component {
                 <TopBar title="Dashboard" />
                 <div className="container">
                     <MDBRow>
-                    <MDBCol>
-                        <MDBCard className="CardHover">
-                        <MDBCardBody>
-                            <Bar
-                                data={dataBar}
-                                options={{
-                                    maintainAspectRatio: false,
-                                    title: {
-                                        display: true,
-                                        text: 'Messages'
-                                    },
-                                }}
-                            />
-                            </MDBCardBody>
+                        <MDBCol md="6" size="12">
+                            <MDBCard className="CardHover">
+                                <MDBCardBody>
+                                    <Bar
+                                        data={dataBar}
+                                        options={{
+                                            maintainAspectRatio: false,
+                                            title: {
+                                                display: true,
+                                                text: 'Messages'
+                                            },
+                                        }}
+                                    />
+                                </MDBCardBody>
                             </MDBCard>
-                            </MDBCol>
-                            <MDBCol>
-                        <MDBCard className="CardHover">
-                        <MDBCardBody>
-                            <Line data={dataLine} 
-                            options={{
-                                    title: {
-                                        display: true,
-                                        text: 'Calls'
-                                    },
-                                }}
-                            />
-                            </MDBCardBody>
+                        </MDBCol>
+                        <MDBCol md="6" size="12">
+                            <MDBCard className="CardHover">
+                                <MDBCardBody>
+                                    <Line data={dataLine}
+                                        options={{
+                                            title: {
+                                                display: true,
+                                                text: 'Calls'
+                                            },
+                                        }}
+                                    />
+                                </MDBCardBody>
                             </MDBCard>
-                            </MDBCol>
-                            </MDBRow>
+                        </MDBCol>
+                    </MDBRow>
                 </div>
 
             </div>
