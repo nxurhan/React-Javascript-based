@@ -1,0 +1,26 @@
+{
+	"user@email.com": {
+		"email": "user@email.com",
+		"password": "userpass",
+		"name": "nourhan",
+		"firstName": "Nourhan",
+		"lastName": "Kheir",
+		"age": 28,
+		"role": "user",
+		"address": "Beirut",
+		"phoneNum": "70123123",
+		"nationality": 1
+	},
+	"admin@email.com": {
+		"email": "admin@email.com",
+		"password": "adminpass",
+		"name": "admin name",
+		"role": "admin",
+		"firstName": "Admin",
+		"lastName": "last name Admin",
+		"age": 30,
+		"address": "Hamra Street",
+		"phoneNum": "70345345",
+		"nationality": 1
+	}
+}

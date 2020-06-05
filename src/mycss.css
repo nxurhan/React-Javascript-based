@@ -1,0 +1,310 @@
+html {
+    /*Top bar bas be edit as added title casuing problems*/
+    overflow: hidden;
+}
+
+:root {
+    --primary: rgb(24, 138, 148) !important;
+    --secondary: #0e284b !important;
+    --grey: #9da7aa !important;
+}
+.wrapper {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+.main {
+    width: 100%!important;
+    min-height: 100%!important;
+    min-width: 0;
+    -webkit-transition: margin-left .4s ease-in-out,left .4s ease-in-out;
+    transition: margin-left .4s ease-in-out,left .4s ease-in-out;
+    overflow-x: hidden!important;
+	overflow-y: auto;
+    max-height: calc(100vh - 40px);
+}
+/*Leftsidebar*/
+.seftsidebarMenu{
+	position: relative;
+	min-height: calc(100vh - 40px);
+    max-height: calc(100vh - 40px);
+}
+.seftsidebarMenu {
+    width: 200px !important;
+    background: var(--secondary) !important;
+}
+li.list-group-item.menuItem {
+    background: transparent;
+    border-radius: 0px !important;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+}
+li.list-group-item.menuItem:hover {
+    background: #184581;
+}
+ul.list-group.menuPart > a:hover {
+    text-decoration: none;
+}
+ul.list-group.menuPart > a.activeClass {
+    background: #184581;
+    color: white;
+}
+body {
+    -ms-overflow-style: scrollbar;
+    width: 100%;
+    font-family: Roboto !important;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-weight: normal !important;
+}
+
+    body .signin {
+        background-size: 100% 100% !important;
+        min-height: 100vh;
+        background: no-repeat;
+    }
+
+/*Sign in page*/
+label.signinText {
+    color: white;
+    font-size: 15px;
+}
+
+label.centerContent.signInText {
+    font-weight: 300;
+    font-family: Roboto !important;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+input.loginInputs::-webkit-input-placeholder {
+    font-weight: 300;
+    color: white !important;
+    font-size: 11px !important;
+}
+
+input.loginInputs {
+    line-height: 40px;
+    font-family: Roboto !important;
+    font-weight: 300;
+    font-size: 13px;
+    background: transparent;
+    border: 1px solid var(--grey);
+    border-radius: 2px;
+    box-shadow: unset !important;
+    color: white !important;
+}
+
+    input.loginInputs:active, input.loginInputs:focus {
+        background: transparent;
+        border: 1px solid var(--secondary);
+    }
+
+button.btn-default.btn.Ripple-parent.loginBtn, button.loginBtn.btn.btn-secondary {
+    background: var(--secondary);
+    width: 100%;
+    color: white;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 400;
+    border-color: transparent;
+}
+
+    button.btn-default.btn.Ripple-parent.loginBtn:hover, button.btn-default.btn.Ripple-parent.loginBtn:active,
+    button.loginBtn.btn.btn-secondary:hover, button.loginBtn.btn.btn-secondary:active {
+        border-color: var(--secondary);
+        background: transparent;
+        color: var(--secondary);
+    }
+
+.flexCenter.signinBackground {
+    background: rgba(255, 255, 255,0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+}
+
+/*helpers*/
+.flexCenter {
+    overflow: hidden;
+    width: 25rem;
+    max-width: calc(100% - 6rem);
+    margin: 0 auto;
+    margin-top: 10% !important;
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
+    -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 1;
+    position: relative
+}
+ .m20{
+     margin: 20px;
+ }
+ .card.CardHover {
+    height: 100% !important;
+}
+.card.CardHover:hover {
+    border: 1px solid var(--secondary);
+}
+/*@media (max-width: 480px) {
+    .flexCenter {
+        top: 50%; 
+        left: 50%; 
+        display: block;
+        position: absolute;
+        width: 750px;
+        height: 417px;
+        margin-top: -208.5px; 
+        margin-left: -375px; 
+    }
+}*/
+.centerContent {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/*Tablepage*/
+.ModalTable {
+    width: 850px;
+    opacity: 1;
+    overflow: hidden;
+    height: fit-content;
+    margin: 0 auto;
+    position: absolute !important;
+    left: 50% !important;
+    right: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button.close:focus {
+    outline: unset !important;
+}
+.MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-formControl.MuiInput-formControl.MuiInputBase-adornedStart.MuiInputBase-adornedEnd {
+    width: 150px !important;
+}
+.MuiTableCell-root {
+    padding: 8px !important;
+}
+    .material-icons {
+    font-size: 20px !important;
+    color: var(--primary);
+}
+button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorInherit:focus {
+    outline: unset !important;
+}
+h6.MuiTypography-root.MuiTypography-h6 {
+    font-size: 13px !important;
+}
+tbody.MuiTableBody-root > tr > td {
+    text-align: center !important;
+}
+inputAdornedStart.MuiInputBase-inputAdornedEnd::-webkit-input-placeholder {
+    font-size: 14px !important;
+}
+
+tr.MuiTableRow-root.MuiTableRow-head > th {
+    text-align: center !important;
+}
+/*-Navbar-*/
+.navbarMDB {
+    background: var(--secondary);
+    height: 40px;
+}
+svg.MuiSvgIcon-root.iconWhite {
+    fill: white;
+}
+a.dropdown-item:hover, a.dropdown-item:active, a.dropdown-item:focus {
+    background: var(--grey);
+    color: white;
+    outline: unset !important;
+}
+a.navbar-brand {
+    color: white !important;
+    font-weight: 300 !important;
+    font-size: 15px;
+    font-family: Roboto !important;
+}
+a.dropdown-toggle.nav-link {
+    color: white;
+}
+.show.dropdown-menu.dropdown-default {
+    left: 0px !important;
+    right: 1px !important;
+}
+/*--Sidenav--*/
+.sideNav {
+    background: var(--secondary);
+    height: 100vh !important;
+    padding: 0px !important;
+}
+/*--Topbar--*/
+span.navbar-brand.navBarTitle {
+    border-bottom: 2px solid;
+    padding: 2px;
+    font-size: 16px;
+}
+    span.navbar-brand.navBarTitle:hover {
+        background: #bed5f3;
+    }
+    /*Toastrs*/
+    .Toastify__toast {
+        font-family: Roboto !important;
+        font-weight: 300 !important;
+        text-align: center !important;
+        min-height: 35px !important;
+        font-size: 12px !important;
+    }
+.Toastify__toast--success {
+    background: rgb(45, 134, 45) !important;
+}
+
+.Toastify__toast--warning {
+    background: var(--grey) !important;
+    color: var(--secondary) !important;
+}
+
+.Toastify__toast--error {
+    background: rgb(179, 0, 0) !important;
+}
+.Toastify__progress-bar {
+    height: 2px !important;
+}
+.Toastify__close-button:hover, .Toastify__close-button:focus {
+    border-color: transparent !important;
+    background: transparent !important;
+    box-shadow: unset !important;
+    outline: unset !important;
+    border: 1px solid transparent !important;
+}
+/*--User info--*/
+label {
+    color: var(--secondary);
+    font-size: 15px !important;
+}
+.form-control {
+    height: calc(1em + .75rem + 2px) !important;
+    font-size: 15px !important;
+}
+.custom-select {
+    height: calc(1.1em + .75rem + 2px) !important;
+    font-size: 15px !important;
+}
+input.form-control::-webkit-input-placeholder {
+    font-size: 14px !important;
+}
+textarea.form-control {
+    height: auto !important;
+}
+
