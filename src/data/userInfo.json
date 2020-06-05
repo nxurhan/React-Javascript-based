@@ -16,7 +16,7 @@
 		"password": "adminpass",
 		"name": "admin name",
 		"role": "admin",
-		"firstName": "Admin",
+		"firstName": "first name Admin",
 		"lastName": "last name Admin",
 		"age": 30,
 		"address": "Hamra Street",

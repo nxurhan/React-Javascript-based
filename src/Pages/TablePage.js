@@ -32,7 +32,7 @@ class TablePage extends Component {
                 },
             ],
             data: [
-                { firstName: 'Mehmet', lastName: 'Baran', nationality: 1, phoneNumber: 123, lastMonthBill: 2 },
+                { firstName: 'Nour', lastName: 'Kh', nationality: 1, phoneNumber: 123, lastMonthBill: 2 },
             ],
             columnsExtra: [
                 { title: 'Address', field: 'Address' },
@@ -40,7 +40,7 @@ class TablePage extends Component {
                 { title: 'Age', field: 'Age', type: 'numeric' },
             ],
             dataExtra: [
-                { Address: 'Mehmet', Services: 2, Age: 23 },
+                { Address: 'Beirut', Services: 2, Age: 23 },
             ],
             openModal: false
 
