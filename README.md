@@ -1,12 +1,3 @@
-Username: admin@email.com
-
-Password: adminpass
-
-Username: user@email.com
-
-Password: userpass
-
-
 Project Overview:
 This project aims to develop a sophisticated web application that facilitates data visualization and efficient user management. The application will be built using ReactJS and follow a class-based pattern, leveraging Redux and local storage for state management. To ensure an aesthetically pleasing and responsive user interface, we will incorporate MDBReact as the primary UI library, complemented by Material-UI and Material-Table for table rendering. React-Toastify will be used for notifications, and React ChartJs 2 will empower us to create interactive and insightful charts.
 
@@ -33,4 +24,12 @@ To deliver an appealing user experience, special attention will be given to the 
 
 Conclusion:
 This data visualization and user management web application will revolutionize data analysis and streamline user management tasks. Through the powerful integration of ReactJS, Redux (or local storage), MDBReact, Material-UI, Material-Table, React-Toastify, and React ChartJs 2, users will enjoy a secure, aesthetically pleasing, and highly interactive experience while exploring data insights and managing user information efficiently. The project promises to be a game-changer, delivering advanced functionality with a user-friendly interface.ditional pages.
+
+Username: admin@email.com
+
+Password: adminpass
+
+Username: user@email.com
+
+Password: userpass
 
