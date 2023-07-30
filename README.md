@@ -8,8 +8,11 @@ Password: userpass
 This project is done based on this test case:
 
 1- Use “class” based pattern in the project, so no hooks.
+
 2- Use Redux (if Redux is applicable) or localStorage, so no Mobx or ContextAPI…etc
+
 3- For UI libraries the following should be used:
+
 A- MDBReact is used as the main UI library. https://www.npmjs.com/package/mdbreact
 B- Material-Table is the table that will be used for displaying data. https://material-table.com/#/
 C- Material-ui/core, this is a library that is needed to be able to run Material-Table.
